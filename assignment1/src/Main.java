@@ -76,6 +76,34 @@ public class Main {
         }
     }
 
+    /**
+     *  Write a java program to check prime number or not
+     *  Input: 23
+     *  Output: not prime number
+     *  Input: 5
+     *  Output: prime number
+     */
+
+    void PrimeNumber(){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a number: ");
+        int num = sc.nextInt();
+
+        boolean prime = false;
+
+        for (int i = 2; i <= num/2; ++i){
+            prime = true;
+            break;
+        }
+
+        if(!prime){
+            System.out.println("prime number");
+        } else {
+            System.out.println("not prime number");
+        }
+
+    }
+
 
 
     public static void main(String[] args) {
@@ -85,6 +113,7 @@ public class Main {
 //        main.SwapTwoNumbers();
 //        main.SwapThreeNumbers();
 //        main.EvenOrNot();
-        main.OddOrNot();
+//        main.OddOrNot();
+        main.PrimeNumber();
     }
 }
