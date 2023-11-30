@@ -230,6 +230,6 @@ public class Main {
 //        main.Armstrong();
 //        main.Palindrome();
 //        main.PrimeNumbers();
-        main.EvenNumbers();
+//        main.EvenNumbers();
     }
 }
