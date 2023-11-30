@@ -46,11 +46,26 @@ public class Main {
         System.out.println("After swapping: " + firstNum + " " + secondNum + " " + thirdNum);
     }
 
+    /**
+     *  write a java program given number is even number or not.
+     */
+    void EvenOrNot(){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the number: ");
+        int num = sc.nextInt();
+
+        if (num%2==0){
+            System.out.println("The number is even");
+        } else {
+            System.out.println("The number is not even");
+        }
+    }
 
 
     public static void main(String[] args) {
         Main main = new Main();
 //        main.SwapTwoNumbers();
-        main.SwapThreeNumbers();
+//        main.SwapThreeNumbers();
+        main.EvenOrNot();
     }
 }
