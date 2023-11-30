@@ -122,6 +122,43 @@ public class Main {
         System.out.println(factorial);
     }
 
+    /**
+     *  7)write a java program given number is Armstrong or not
+     *  Input: 153
+     *  Output: Armstrong number
+     *  Input: 22
+     *  Output: not Armstrong number
+     */
+
+    void Armstrong() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a number: ");
+        int num = sc.nextInt();
+
+        // logic:
+        // 1^3 + 5^3 + 3^3 = 1 + 125 + 27 = 153
+        // Sum(d^n) = n
+
+        int originalNumber = num;
+        int sum = 0;
+        int numberOfDigits = 0;
+
+        for (int n=num; n != 0; n/= 10){
+            numberOfDigits++;
+        }
+
+        for (int num1 = num; num1 != 0; num1/= 10){
+            int digit = num1 % 10;
+            // calculate power of the number
+            sum += (int) Math.pow(digit, numberOfDigits);
+        }
+
+        if (sum == originalNumber) {
+            System.out.println("Armstrong number");
+        } else {
+            System.out.println("not Armstrong number");
+        }
+    }
 
     public static void main(String[] args) {
         // Please run one program at a time!
@@ -132,6 +169,7 @@ public class Main {
 //        main.EvenOrNot();
 //        main.OddOrNot();
 //        main.PrimeNumber();
-        main.Factorial();
+//        main.Factorial();
+        main.Armstrong();
     }
 }
