@@ -47,7 +47,7 @@ public class Main {
     }
 
     /**
-     *  write a java program given number is even number or not.
+     *  3) write a java program given number is even number or not.
      */
     void EvenOrNot(){
         Scanner sc = new Scanner(System.in);
@@ -62,7 +62,7 @@ public class Main {
     }
 
     /**
-     *  write a java program give number is odd number or not
+     *  4) write a java program give number is odd number or not
      */
     void OddOrNot() {
         Scanner sc = new Scanner(System.in);
@@ -77,7 +77,7 @@ public class Main {
     }
 
     /**
-     *  Write a java program to check prime number or not
+     *  5) Write a java program to check prime number or not
      *  Input: 23
      *  Output: not prime number
      *  Input: 5
@@ -104,6 +104,23 @@ public class Main {
 
     }
 
+    /**
+     * 6) Write a java program to print factorial of a number.
+     * Input: 5
+     * Output: 120
+     * Input: 6
+     * Output: 720
+     */
+    void Factorial() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a number: ");
+        int num = sc.nextInt();
+        int factorial = 1;
+        for (int i=1; i<=num; i++){
+            factorial *= i;
+        }
+        System.out.println(factorial);
+    }
 
 
     public static void main(String[] args) {
@@ -114,6 +131,7 @@ public class Main {
 //        main.SwapThreeNumbers();
 //        main.EvenOrNot();
 //        main.OddOrNot();
-        main.PrimeNumber();
+//        main.PrimeNumber();
+        main.Factorial();
     }
 }
