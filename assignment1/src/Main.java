@@ -183,7 +183,27 @@ public class Main {
         } else {
             System.out.println("Not Palindrome");
         }
+    }
 
+    /**
+     * 9)Write a Java program display 1 to 100 between prime numbers
+     */
+    void PrimeNumbers(){
+        int firstNum = 1;
+        int lastNum = 100;
+
+        for(int num = firstNum; num <= lastNum; num++){
+            boolean isPrime = true;
+            for (int j = 2; j < num; j++){
+                if (num % j == 0){
+                    isPrime = false;
+                    break;
+                }
+            }
+            if(isPrime){
+                System.out.println(num);
+            }
+        }
     }
 
     public static void main(String[] args) {
@@ -197,6 +217,7 @@ public class Main {
 //        main.PrimeNumber();
 //        main.Factorial();
 //        main.Armstrong();
-        main.Palindrome();
+//        main.Palindrome();
+        main.PrimeNumbers();
     }
 }
