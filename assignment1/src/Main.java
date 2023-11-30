@@ -61,11 +61,30 @@ public class Main {
         }
     }
 
+    /**
+     *  write a java program give number is odd number or not
+     */
+    void OddOrNot() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the number: ");
+        int num = sc.nextInt();
+
+        if (num%2!=0){
+            System.out.println("The number is odd");
+        } else {
+            System.out.println("The number is not odd");
+        }
+    }
+
+
 
     public static void main(String[] args) {
+        // Please run one program at a time!
+
         Main main = new Main();
 //        main.SwapTwoNumbers();
 //        main.SwapThreeNumbers();
-        main.EvenOrNot();
+//        main.EvenOrNot();
+        main.OddOrNot();
     }
 }
