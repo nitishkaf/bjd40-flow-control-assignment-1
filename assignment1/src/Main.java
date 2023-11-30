@@ -160,6 +160,32 @@ public class Main {
         }
     }
 
+    /**
+     *  8) Write a java program given number is palindrome or not.
+     */
+    void Palindrome() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a number: ");
+        int num = sc.nextInt();
+
+        // logic: 131 = 131 if they are same on reverse, its palindrome
+        int originalNum = num;
+        int reverseNum = 0;
+
+        while(num !=0) {
+            int digit = num % 10;
+            reverseNum = reverseNum * 10 + digit;
+            num /= 10;
+        }
+
+        if(originalNum == reverseNum){
+            System.out.println("Palindrome");
+        } else {
+            System.out.println("Not Palindrome");
+        }
+
+    }
+
     public static void main(String[] args) {
         // Please run one program at a time!
 
@@ -170,6 +196,7 @@ public class Main {
 //        main.OddOrNot();
 //        main.PrimeNumber();
 //        main.Factorial();
-        main.Armstrong();
+//        main.Armstrong();
+        main.Palindrome();
     }
 }
