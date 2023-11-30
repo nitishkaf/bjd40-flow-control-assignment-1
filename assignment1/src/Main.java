@@ -192,7 +192,7 @@ public class Main {
         int firstNum = 1;
         int lastNum = 100;
 
-        for(int num = firstNum; num <= lastNum; num++){
+        for(int num = firstNum; num < lastNum; num++){
             boolean isPrime = true;
             for (int j = 2; j < num; j++){
                 if (num % j == 0){
@@ -202,6 +202,17 @@ public class Main {
             }
             if(isPrime){
                 System.out.println(num);
+            }
+        }
+    }
+
+    /**
+     * 10) write a java program display 1 to 100 between even numbers
+     */
+    void EvenNumbers(){
+        for (int i=1; i< 100; i++){
+            if(i % 2 == 0){
+                System.out.println(i);
             }
         }
     }
@@ -218,6 +229,7 @@ public class Main {
 //        main.Factorial();
 //        main.Armstrong();
 //        main.Palindrome();
-        main.PrimeNumbers();
+//        main.PrimeNumbers();
+        main.EvenNumbers();
     }
 }
